@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio | Poema Café</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Poema Café</h1>
+        <p>Café e Poesia em um só lugar</p>
+    </header>
+    
+    <section class="container">
+        <h2 class="section-title">Nosso Cardápio</h2>
+        
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-category="todos">Todos</button>
+            <button class="filter-btn" data-category="cafe">Cafés</button>
+            <button class="filter-btn" data-category="bolo">Bolos</button>
+            <button class="filter-btn" data-category="sanduiche">Sanduíches</button>
+            <button class="filter-btn" data-category="suco">Sucos</button>
+        </div>
+        
+        <div class="menu-container">
+            <!-- Cafés -->
+            <div class="menu-item" data-category="cafe">
+                <div class="menu-img">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/0167fcb7-38c6-4200-9256-d10bd811edda.png" alt="Xícara de café espresso com grãos ao redor" />
+                </div>
+                <div class="menu-content">
+                    <div class="menu-title">
+                        <h3>Espresso</h3>
+                        <span class="menu-price">R$ 8,90</span>
+                    </div>
+                    <div class="divider"></div>
+                    <p class="menu-desc">Café espresso aromático feito com grãos 100% arábica.</p>
+                </div>
+            </div>
+            
+            <div class="menu-item" data-category="cafe">
+                <div class="menu-img">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ac80255c-70f5-497a-9de6-26cb1c63e6a7.png" alt="Café com leite em caneca grande com desenho de coração na espuma" />
+                </div>
+                <div class="menu-content">
+                    <div class="menu-title">
+                        <h3>Café com Leite</h3>
+                        <span class="menu-price">R$ 10,90</span>
+                    </div>
+                    <div class="divider"></div>
+                    <p class="menu-desc">Café espresso suave com leite vaporizado e espuma cremosa.</p>
+                </div>
+            </div>
+            
+            <div class="menu-item" data-category="cafe">
+                <div class="menu-img">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7443cac1-0fab-4e8f-951f-f959cdf9123e.png" alt="Cappuccino escuro em xícara de porcelana com canela polvilhada" />
+                </div>
+                <div class="menu-content">
+                    <div class="menu-title">
+                        <h3>Cappuccino</h3>
+                        <span class="menu-price">R$ 12,90</span>
+                    </div>
+                    <div class="divider"></div>
+                    <p class="menu-desc">Espresso com leite vaporizado e espuma de leite, finalizado com canela.</p>
+                </div>
+            </div>
+            
+            <!-- Bolos -->
+            <div class="menu-item" data-category="bolo">
+                <div class="menu-img">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f9f44137-608c-4191-b684-94e485fee6cc.png" alt="Fatia de bolo de chocolate com cobertura ganache e raspas de chocolate" />
+                </div>
+                <div class="menu-content">
+                    <div class="menu-title">
+                        <h3>Bolo de Chocolate</h3>
+                        <span class="menu-price">R$ 14,90</span>
+                    </div>
+                    <div class="divider"></div>
+                    <p class="menu-desc">Fatia generosa de bolo de chocolate com recheio de brigadeiro.</p>
+                </div>
+            </div>
+            
+            <div class="menu-item" data-category="bolo">
+                <div class="menu-img">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/aac20c39-f5fa-446a-be68-ceceebf05543.png" alt="Bolo de cenoura com cobertura de chocolate e nozes picadas" />
+                </div>
+                <div class="menu-content">
+                    <div class="menu-title">
+                        <h3>Bolo de Cenoura</h3>
+                        <span class="menu-price">R$ 12,90</span>
+                    </div>
+                    <div class="divider"></div>
+                    <p class="menu-desc">Bolo de cenoura fofinho com cobertura durinha de chocolate meio amargo.</p>
+                </div>
+            </div>
+            
+            <!-- Sanduíches -->
+            <div class="menu-item" data-category="sanduiche">
+                <div class="menu-img">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/93076e6d-8585-41fa-9a8c-e99eff414aa9.png" alt="Sanduíche natural de frango com pão integral e folhas verdes" />
+                </div>
+                <div class="menu-content">
+                    <div class="menu-title">
+                        <h3>Sanduíche Natural</h3>
+                        <span class="menu-price">R$ 18,90</span>
+                    </div>
+                    <div class="divider"></div>
+                    <p class="menu-desc">Pão integral com frango desfiado, cream cheese, alface e tomate.</p>
+                </div>
+            </div>
+            
+            <!-- Sucos -->
+            <div class="menu-item" data-category="suco">
+                <div class="menu-img">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/8a83a4d7-2eda-4c4c-885d-d19d7cfa0dd8.png" alt="Suco de laranja natural em jarra de vidro com fatias de laranja decorando" />
+                </div>
+                <div class="menu-content">
+                    <div class="menu-title">
+                        <h3>Suco de Laranja</h3>
+                        <span class="menu-price">R$ 9,90</span>
+                    </div>
+                    <div class="divider"></div>
+                    <p class="menu-desc">Suco natural de laranja espremido na hora.</p>
+                </div>
+            </div>
+            
+            <div class="menu-item" data-category="suco">
+                <div class="menu-img">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/e10ea6ef-ad67-4b3f-9e37-b0259df5ab4a.png" alt="Taça de açaí cremoso com granola e frutas vermelhas" />
+                </div>
+                <div class="menu-content">
+                    <div class="menu-title">
+                        <h3>Açaí Cremoso</h3>
+                        <span class="menu-price">R$ 16,90</span>
+                    </div>
+                    <div class="divider"></div>
+                    <p class="menu-desc">Açaí cremoso acompanhado de granola e frutas frescas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer-info">
+            <div class="footer-section">
+                <h3>Horário de Funcionamento</h3>
+                <p>Segunda a Sexta: 7h - 20h</p>
+                <p>Sábado e Domingo: 8h - 18h</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <p>(11) 9999-9999</p>
+                <p>contato@cafe.com.br</p>
+                <p>Rua das Cafeteiras, 123 - Centro</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Redes Sociais</h3>
+                <p>@cafe</p>
+            </div>
+        </div>
+        
+        <p>© 2025 Poema Café. Todos os direitos reservados.</p>
+    </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const menuItems = document.querySelectorAll('.menu-item');
+            
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // Remover classe active de todos os botões
+                    filterBtns.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Adicionar classe active ao botão clicado
+                    this.classList.add('active');
+                    
+                    const category = this.dataset.category;
+                    
+                    // Filtrar itens do cardápio
+                    menuItems.forEach(item => {
+                        if (category === 'todos' || item.dataset.category === category) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
