@@ -19,7 +19,7 @@ O Poema Café é um projeto de cardápio online que combina a experiência de um
 ## Como Usar
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/emyaandrade/poema-cafe.git
+   git clone https://github.com/emyaandrade/projeto-cardapio-cafe.git
 
 
 # Documentação do Projeto
