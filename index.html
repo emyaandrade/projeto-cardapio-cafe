@@ -9,8 +9,8 @@
 </head>
 <body>
     <header>
-        <h1>Poema Café</h1> <!-- Título principal do café -->
-        <p>Café e Poesia em um só lugar</p> <!-- Slogan do café -->
+        <h1>Poema - Café Bar</h1> <!-- Título principal do café -->
+        <p>Café, Poesia e Drinks em um só lugar</p> <!-- Slogan do café -->
     </header>
     
     <section class="container"> <!-- Seção principal do cardápio -->
@@ -19,8 +19,10 @@
         <div class="filter-buttons"> <!-- Botões de filtro para categorias do cardápio -->
             <button class="filter-btn active" data-category="todos">Todos</button> <!-- Botão para mostrar todos os itens -->
             <button class="filter-btn" data-category="cafe">Cafés</button> <!-- Botão para filtrar cafés -->
+            <button class="filter-btn" data-category="cha">Chás</button> <!-- Botão para filtrar chás -->
             <button class="filter-btn" data-category="bolo">Bolos</button> <!-- Botão para filtrar bolos -->
-            <button class="filter-btn" data-category="sanduiche">Sanduíches</button> <!-- Botão para filtrar sanduíches -->
+            <button class="filter-btn" data-category="cookie">Cookies</button> <!-- Botão para filtrar cookies -->
+            <button class="filter-btn" data-category="torta">Tortas</button> <!-- Botão para filtrar tortas -->
             <button class="filter-btn" data-category="suco">Sucos</button> <!-- Botão para filtrar sucos -->
         </div>
         
@@ -28,32 +30,18 @@
             <!-- Item de Café -->
             <div class="menu-item" data-category="cafe"> <!-- Item de cardápio com categoria café -->
                 <div class="menu-img"> <!-- Imagem do item -->
-                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/0167fcb7-38c6-4200-9256-d10bd811edda.png" alt="Xícara de café espresso com grãos ao redor" />
+                    <img src="img/cafe-coado.jpeg" alt="Xícara de café coado" />
                 </div>
                 <div class="menu-content"> <!-- Conteúdo do item -->
                     <div class="menu-title"> <!-- Título e preço do item -->
-                        <h3>Espresso</h3>
-                        <span class="menu-price">R$ 8,90</span> <!-- Preço do item -->
+                        <h3>Café Coado</h3>
+                        <span class="menu-price">R$ 7,90</span> <!-- Preço do item -->
                     </div>
                     <div class="divider"></div> <!-- Divisor visual -->
-                    <p class="menu-desc">Café espresso aromático feito com grãos 100% arábica.</p> <!-- Descrição do item -->
+                    <p class="menu-desc">Café coado na hora, preparado individualmente para garantir frescor e aroma em cada xícara.</p> <!-- Descrição do item -->
                 </div>
             </div>
-            
-            <div class="menu-item" data-category="cafe">
-                <div class="menu-img">
-                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ac80255c-70f5-497a-9de6-26cb1c63e6a7.png" alt="Café com leite em caneca grande com desenho de coração na espuma" />
-                </div>
-                <div class="menu-content">
-                    <div class="menu-title">
-                        <h3>Café com Leite</h3>
-                        <span class="menu-price">R$ 10,90</span>
-                    </div>
-                    <div class="divider"></div>
-                    <p class="menu-desc">Café espresso suave com leite vaporizado e espuma cremosa.</p>
-                </div>
-            </div>
-            
+
             <div class="menu-item" data-category="cafe">
                 <div class="menu-img">
                     <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7443cac1-0fab-4e8f-951f-f959cdf9123e.png" alt="Cappuccino escuro em xícara de porcelana com canela polvilhada" />
@@ -68,47 +56,175 @@
                 </div>
             </div>
             
-            <!-- Bolos -->
-            <div class="menu-item" data-category="bolo">
+            <div class="menu-item" data-category="cafe">
                 <div class="menu-img">
-                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f9f44137-608c-4191-b684-94e485fee6cc.png" alt="Fatia de bolo de chocolate com cobertura ganache e raspas de chocolate" />
+                    <img src="img/cafe-especial.jpeg" alt="Café com especial em caneca grande com desenho na espuma, e um biscoito em formato de coração" />
                 </div>
                 <div class="menu-content">
                     <div class="menu-title">
-                        <h3>Bolo de Chocolate</h3>
+                        <h3>Café Especial</h3>
                         <span class="menu-price">R$ 14,90</span>
                     </div>
                     <div class="divider"></div>
-                    <p class="menu-desc">Fatia generosa de bolo de chocolate com recheio de brigadeiro.</p>
+                    <p class="menu-desc">Café especial com toque de chocolate e espuma cremosa, acompanhado de um delicado biscoito de coração.</p>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="cafe">
+                <div class="menu-img">
+                    <img src="img/frappuccino.jpeg" alt="Bebida gelada à base de café com gelo e leite batidos e chantilly cremoso" />
+                </div>
+                <div class="menu-content">
+                    <div class="menu-title">
+                        <h3>Frappuccino</h3>
+                        <span class="menu-price">R$ 22,00</span>
+                    </div>
+                    <div class="divider"></div>
+                    <p class="menu-desc">Bebida gelada à base de café com gelo e leite batidos e chantilly cremoso.</p>
+                </div>
+            </div>
+
+            <!-- Chá -->
+            <div class="menu-item" data-category="cha"> <!-- Item de cardápio com categoria chá -->
+                <div class="menu-img"> <!-- Imagem do item -->
+                    <img src="img/cha.jpeg" alt="Xícara chá" />
+                </div>
+                <div class="menu-content"> <!-- Conteúdo do item -->
+                    <div class="menu-title"> <!-- Título e preço do item -->
+                        <h3>Chá do Poema</h3>
+                        <span class="menu-price">R$ 7,90</span> <!-- Preço do item -->
+                    </div>
+                    <div class="divider"></div> <!-- Divisor visual -->
+                    <p class="menu-desc">Infusão de frutas vermelhas, com sabor adocicado e aroma vibrante.</p> <!-- Descrição do item -->
+                </div>
+            </div>
+            
+            <!-- Bolos -->
+            <div class="menu-item" data-category="bolo">
+                <div class="menu-img">
+                    <img src="img/brownie.jpeg" alt="Fatia de brownie" />
+                </div>
+                <div class="menu-content">
+                    <div class="menu-title">
+                        <h3>Brownie</h3>
+                        <span class="menu-price">R$ 12,90</span>
+                    </div>
+                    <div class="divider"></div>
+                    <p class="menu-desc">Com uma casquinha crocante por fora e um interior macio. Nosso brownie é feito com o mais puro chocolate.</p>
                 </div>
             </div>
             
             <div class="menu-item" data-category="bolo">
                 <div class="menu-img">
-                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/aac20c39-f5fa-446a-be68-ceceebf05543.png" alt="Bolo de cenoura com cobertura de chocolate e nozes picadas" />
+                    <img src="img/bolo-de-cenoura.jpeg" alt="Bolo de cenoura com cobertura de chocolate" />
                 </div>
                 <div class="menu-content">
                     <div class="menu-title">
                         <h3>Bolo de Cenoura</h3>
-                        <span class="menu-price">R$ 12,90</span>
+                        <span class="menu-price">R$ 10,90</span>
                     </div>
                     <div class="divider"></div>
-                    <p class="menu-desc">Bolo de cenoura fofinho com cobertura durinha de chocolate meio amargo.</p>
+                    <p class="menu-desc">Bolo de cenoura fofinho com cobertura de chocolate meio amargo.</p>
                 </div>
             </div>
-            
-            <!-- Sanduíches -->
-            <div class="menu-item" data-category="sanduiche">
+
+            <div class="menu-item" data-category="bolo">
                 <div class="menu-img">
-                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/93076e6d-8585-41fa-9a8c-e99eff414aa9.png" alt="Sanduíche natural de frango com pão integral e folhas verdes" />
+                    <img src="img/cheesecake.jpeg" alt="Cheesecake com cobertura de frutas vermelhas" />
                 </div>
                 <div class="menu-content">
                     <div class="menu-title">
-                        <h3>Sanduíche Natural</h3>
-                        <span class="menu-price">R$ 18,90</span>
+                        <h3>Cheesecake</h3>
+                        <span class="menu-price">R$ 12,90</span>
                     </div>
                     <div class="divider"></div>
-                    <p class="menu-desc">Pão integral com frango desfiado, cream cheese, alface e tomate.</p>
+                    <p class="menu-desc">Feito com uma base crocante, um creme de queijo suave e aerado, e finalizado com uma deliciosa cobertura de frutas vermelhas.</p>
+                </div>
+            </div>
+            
+            <!-- Cookies -->
+            <div class="menu-item" data-category="cookie">
+                <div class="menu-img">
+                    <img src="img/cookie-nutella.jpeg" alt="Cookie recheado de Nutella" />
+                </div>
+                <div class="menu-content">
+                    <div class="menu-title">
+                        <h3>Cookie de Nutella</h3>
+                        <span class="menu-price">R$ 15,90</span>
+                    </div>
+                    <div class="divider"></div>
+                    <p class="menu-desc">Um delicioso Cookie feito com massa de baunilha e recheado de Nutella.</p>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="cookie">
+                <div class="menu-img">
+                    <img src="img/cookie-redvelvet.jpeg" alt="Cookie Red Velvet" />
+                </div>
+                <div class="menu-content">
+                    <div class="menu-title">
+                        <h3>Cookie Red Velvet</h3>
+                        <span class="menu-price">R$ 15,90</span>
+                    </div>
+                    <div class="divider"></div>
+                    <p class="menu-desc">Uma delícia que combina a textura macia com o sabor sutil do chocolate e o toque vibrante do red velvet. Recheado com chocolate branco.</p>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="cookie">
+                <div class="menu-img">
+                    <img src="img/cookies-trio-02.jpg" alt="Trio de Cookies: nutella, redvelvet e doce de leite" />
+                </div>
+                <div class="menu-content">
+                    <div class="menu-title">
+                        <h3>Trio de Cookies</h3>
+                        <span class="menu-price">R$ 42,00</span>
+                    </div>
+                    <div class="divider"></div>
+                    <p class="menu-desc">Experimente o nosso Trio de Cookies Especiais - Doce de Leite, Red Velvet, Nutella.</p>
+                </div>
+            </div>
+
+            <!-- Tortas -->
+            <div class="menu-item" data-category="torta">
+                <div class="menu-img">
+                    <img src="img/torta-de-frango.jpeg" alt="Torta de frango" />
+                </div>
+                <div class="menu-content">
+                    <div class="menu-title">
+                        <h3>Torta de Frango</h3>
+                        <span class="menu-price">R$ 10,90</span>
+                    </div>
+                    <div class="divider"></div>
+                    <p class="menu-desc">Um pedaço generoso da nossa torta salgada com massa macia, recheada com suculento frango desfiado temperado.</p>
+                </div>
+            </div>
+            
+            <div class="menu-item" data-category="torta">
+                <div class="menu-img">
+                    <img src="img/mini-torta-morango.jpeg" alt="Tortihas de morango" />
+                </div>
+                <div class="menu-content">
+                    <div class="menu-title">
+                        <h3>Tortilha Doce</h3>
+                        <span class="menu-price">R$ 13,90</span>
+                    </div>
+                    <div class="divider"></div>
+                    <p class="menu-desc">Mini torta com base crocante, recheada com creme suave e coberta com morangos frescos.</p>
+                </div>
+            </div>
+
+            <div class="menu-item" data-category="torta">
+                <div class="menu-img">
+                    <img src="img/mini-torta-cookie.jpeg" alt="Mini torta com base de cookie" />
+                </div>
+                <div class="menu-content">
+                    <div class="menu-title">
+                        <h3>Torta de Cookie</h3>
+                        <span class="menu-price">R$ 16,90</span>
+                    </div>
+                    <div class="divider"></div>
+                    <p class="menu-desc">Mini torta com base de cookie, recheada generosamente com Nutella e pedaços de bolacha cookie.</p>
                 </div>
             </div>
             
@@ -140,6 +256,7 @@
                     <p class="menu-desc">Açaí cremoso acompanhado de granola e frutas frescas.</p>
                 </div>
             </div>
+
         </div>
     </section>
     
